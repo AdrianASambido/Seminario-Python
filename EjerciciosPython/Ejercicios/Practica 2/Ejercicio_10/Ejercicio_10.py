@@ -28,7 +28,7 @@ notas_2 = [30, 95, 28, 84, 84, 43, 66, 51, 4, 11, 58, 10, 13, 34, 96, 71, 86, 37
 def listar (nombres): # Item "A"
     ''' Tomamos las tres listas: 'nombres, notas_1, notas_2' y creamos un 
         diccionario con (clave=nommbre, y valor [nota_1, nota_2])  '''
-    lista = nombres.replace("'","").replace(",","").split()
+    lista = nombres.replace("'","").replace(" ","").replace("\n","").split(",")
     '''con el for itero en las tres listas, y con zip tomo el primer valor de cada una y creo clave, valor '''
     alumnos = {name:[note1,note2] for name, note1,note2 in zip(lista,notas_1,notas_2)}
     return alumnos
