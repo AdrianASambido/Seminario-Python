@@ -43,8 +43,8 @@ def promedio_notas(alumnos): # Item "B"
 
 def promedio_general(promedio_alumnos): # Item "C"
     '''sacamos promedio general de los alumnos'''
-    promedio_alumnos = sum(promedio_alumnos.values())/len(promedio_alumnos)
-    return promedio_alumnos
+    promedio_total = sum(promedio_alumnos.values())/len(promedio_alumnos)
+    return promedio_total
 
 def promedio_maximo(promedio_alumnos): # Item D
     '''sacamos el alumno de promedio maximo '''
